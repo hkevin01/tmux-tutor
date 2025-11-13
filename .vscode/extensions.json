@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "redhat.java",
+    "vscjava.vscode-java-pack",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "foxundermoon.shell-format",
+    "timonwong.shellcheck",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
+    "ms-azuretools.vscode-docker",
+    "eamodio.gitlens",
+    "mhutchie.git-graph"
+  ]
+}

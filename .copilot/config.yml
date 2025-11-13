@@ -1,0 +1,49 @@
+# GitHub Copilot Configuration for Tmux Mastery Lab
+
+# Project-specific context
+project:
+  name: "Tmux Mastery Lab"
+  type: "Educational Tool"
+  primary_languages:
+    - bash
+    - python
+    - yaml
+  
+# Code style preferences
+style:
+  bash:
+    indent: 2
+    naming: snake_case
+    error_handling: strict
+    logging: verbose
+  
+  python:
+    indent: 4
+    naming: snake_case
+    type_hints: encouraged
+    docstrings: google_style
+  
+# Suggestions preferences
+suggestions:
+  prioritize:
+    - error_handling
+    - logging
+    - documentation
+    - performance
+  
+  avoid:
+    - complex_one_liners
+    - undocumented_hacks
+    - platform_specific_without_fallback
+
+# Testing requirements
+testing:
+  unit_tests: required
+  integration_tests: encouraged
+  coverage_target: 80
+
+# Documentation
+documentation:
+  comments: detailed
+  function_docs: required
+  examples: encouraged

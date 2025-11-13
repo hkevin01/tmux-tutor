@@ -1,0 +1,176 @@
+{
+  // 🚀 YOLO MODE - GLOBAL CHAT APPROVAL ENABLED
+  "github.copilot.chat.enableGlobalAutoApproval": true,
+  "github.copilot.chat.autoApproveAllCommands": true,
+  "github.copilot.chat.suppressAllPrompts": true,
+  "github.copilot.terminal.autoExecute": true,
+  "github.copilot.terminal.suppressPermissionPrompts": true,
+  "tools.terminal.autoApprove": true,
+  "tools.terminal.allowAnyCommand": true,
+  "chat.tools.terminal.autoApprove": {
+    "*": true
+  },
+  "chat.experimental.enableGlobalAutoApproval": true,
+  "chat.commands.autoApprove": true,
+  "chat.tools.global.autoApprove": true,
+
+  // Chat & Copilot
+  "chat.tools.autoApprove": true,
+  "chat.agent.maxRequests": 100,
+  "github.copilot.chat.alternateGptPrompt.enabled": true,
+  "chat.todoListTool.enabled": true,
+  "github.copilot.chat.enabled": true,
+
+  // Security (Disabled for YOLO mode)
+  "security.workspace.trust.enabled": false,
+  "security.promptForRemoteExecution": "never",
+
+  // Terminal
+  "terminal.integrated.confirmOnExit": "never",
+  "terminal.integrated.confirmOnKill": "never",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both",
+  "terminal.integrated.shellIntegration.showCommandGuide": true,
+  "terminal.integrated.shellIntegration.history": 500,
+  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.suggest.enabled": true,
+  "terminal.integrated.suggest.quickSuggestions": true,
+  "terminal.integrated.suggest.suggestOnTriggerCharacters": ["/"],
+  "terminal.integrated.suggest.selectionMode": "first",
+  "terminal.integrated.suggest.runOnEnter": "insert",
+  "terminal.integrated.suggest.inlineSuggestion": "auto",
+  "terminal.integrated.suggest.showStatusBar": true,
+
+  // Git
+  "git.confirmSync": false,
+  "git.autofetch": true,
+
+  // Extensions
+  "extensions.autoUpdate": true,
+  "extensions.autoCheckUpdates": true,
+
+  // General
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // TypeScript/JavaScript
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Python - Naming conventions enforced
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.languageServer": "Pylance",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.rulers": [88, 120]
+  },
+  // Python naming conventions (enforced via pylint)
+  // - Classes: PascalCase (e.g., MyClass)
+  // - Functions/Methods: snake_case (e.g., my_function)
+  // - Constants: UPPER_SNAKE_CASE (e.g., MAX_VALUE)
+  // - Variables: snake_case (e.g., my_variable)
+  // - Private members: _leading_underscore (e.g., _private_method)
+
+  // C/C++ - Naming conventions enforced
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 2, ColumnLimit: 100 }",
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.intelliSenseEngine": "default",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 2
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 2
+  },
+  // C/C++ naming conventions (Google Style)
+  // - Classes/Structs: PascalCase (e.g., MyClass)
+  // - Functions: PascalCase for public, snake_case for private (e.g., DoSomething, do_internal)
+  // - Variables: snake_case (e.g., my_variable)
+  // - Constants: kPascalCase (e.g., kMaxValue)
+  // - Member variables: snake_case with trailing underscore (e.g., member_variable_)
+  // - Macros: UPPER_SNAKE_CASE (e.g., MY_MACRO)
+
+  // Java - Naming conventions enforced
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.format.settings.url": "${workspaceFolder}/.vscode/eclipse-java-formatter.xml",
+  "java.format.settings.profile": "GoogleStyle",
+  "java.codeGeneration.useBlocks": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.tabSize": 2
+  },
+  // Java naming conventions (Google Style)
+  // - Classes/Interfaces: PascalCase (e.g., MyClass)
+  // - Methods: camelCase (e.g., myMethod)
+  // - Variables: camelCase (e.g., myVariable)
+  // - Constants: UPPER_SNAKE_CASE (e.g., MAX_VALUE)
+  // - Packages: lowercase (e.g., com.example.myapp)
+
+  // Shell/Bash
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 2
+  },
+  "shellformat.effectLanguages": ["shellscript", "dockerfile"],
+  // Bash naming conventions
+  // - Functions: snake_case (e.g., my_function)
+  // - Variables: snake_case for local, UPPER_SNAKE_CASE for env/global (e.g., my_var, MY_ENV)
+  // - Constants: UPPER_SNAKE_CASE (e.g., MAX_RETRIES)
+
+  // Markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  },
+
+  // YAML
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.tabSize": 2
+  },
+
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  }
+}
