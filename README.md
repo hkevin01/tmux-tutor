@@ -37,13 +37,13 @@
 
 ### What Problem Does This Solve?
 
-| Problem | Traditional Approach | Our Solution |
+| <sub>Problem</sub> | <sub>Traditional Approach</sub> | <sub>Our Solution</sub> |
 |---------|---------------------|--------------|
-| **Steep Learning Curve** | Read man pages, trial and error | Structured labs with progressive difficulty |
-| **Configuration Complexity** | Copy random configs from the internet | Production-ready, well-documented `.tmux.conf` |
-| **No Practical Examples** | Theoretical knowledge only | Runnable demos showcasing real workflows |
-| **Session Management** | Manual recreation every time | Automated save/restore with layout persistence |
-| **Pair Programming Setup** | Complex socket configuration | One-command shared session setup |
+| <sub>**Steep Learning Curve**</sub> | <sub>Read man pages, trial and error</sub> | <sub>Structured labs with progressive difficulty</sub> |
+| <sub>**Configuration Complexity**</sub> | <sub>Copy random configs from the internet</sub> | <sub>Production-ready, well-documented `.tmux.conf`</sub> |
+| <sub>**No Practical Examples**</sub> | <sub>Theoretical knowledge only</sub> | <sub>Runnable demos showcasing real workflows</sub> |
+| <sub>**Session Management**</sub> | <sub>Manual recreation every time</sub> | <sub>Automated save/restore with layout persistence</sub> |
+| <sub>**Pair Programming Setup**</sub> | <sub>Complex socket configuration</sub> | <sub>One-command shared session setup</sub> |
 
 ---
 
@@ -234,12 +234,12 @@ flowchart TD
 
 ### Core Technologies
 
-| Technology | Version | Purpose | Why Chosen |
+| <sub>Technology</sub> | <sub>Version</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> |
 |------------|---------|---------|------------|
-| **tmux** | ≥ 3.2 | Terminal multiplexer | Industry-standard tool for session management, widely adopted in DevOps and remote development |
-| **Bash** | ≥ 4.0 | Scripting language | Universal availability on Linux/macOS, POSIX compliance ensures portability |
-| **Python** | ≥ 3.8 | Advanced automation | Rich ecosystem for data parsing (YAML/JSON), robust error handling, cross-platform compatibility |
-| **Docker** | ≥ 20.10 | Containerization | Reproducible learning environment, eliminates "works on my machine" issues |
+| <sub>**tmux**</sub> | <sub>≥ 3.2</sub> | <sub>Terminal multiplexer</sub> | <sub>Industry-standard tool for session management, widely adopted in DevOps and remote development</sub> |
+| <sub>**Bash**</sub> | <sub>≥ 4.0</sub> | <sub>Scripting language</sub> | <sub>Universal availability on Linux/macOS, POSIX compliance ensures portability</sub> |
+| <sub>**Python**</sub> | <sub>≥ 3.8</sub> | <sub>Advanced automation</sub> | <sub>Rich ecosystem for data parsing (YAML/JSON), robust error handling, cross-platform compatibility</sub> |
+| <sub>**Docker**</sub> | <sub>≥ 20.10</sub> | <sub>Containerization</sub> | <sub>Reproducible learning environment, eliminates "works on my machine" issues</sub> |
 
 ### Detailed Technology Justification
 
@@ -400,13 +400,13 @@ graph TB
 
 ### Supporting Tools
 
-| Tool | Purpose | Why Chosen |
+| <sub>Tool</sub> | <sub>Purpose</sub> | <sub>Why Chosen</sub> |
 |------|---------|------------|
-| **awk/sed/grep** | Text processing | Universal Unix tools, no dependencies |
-| **jq** | JSON parsing in shell | Lightweight, fast, shell-friendly |
-| **xclip/xsel** | Linux clipboard | Standard clipboard utilities |
-| **pbcopy/pbpaste** | macOS clipboard | Native macOS clipboard access |
-| **yq** (optional) | YAML parsing in shell | Human-readable layout files |
+| <sub>**awk/sed/grep**</sub> | <sub>Text processing</sub> | <sub>Universal Unix tools, no dependencies</sub> |
+| <sub>**jq**</sub> | <sub>JSON parsing in shell</sub> | <sub>Lightweight, fast, shell-friendly</sub> |
+| <sub>**xclip/xsel**</sub> | <sub>Linux clipboard</sub> | <sub>Standard clipboard utilities</sub> |
+| <sub>**pbcopy/pbpaste**</sub> | <sub>macOS clipboard</sub> | <sub>Native macOS clipboard access</sub> |
+| <sub>**yq** (optional)</sub> | <sub>YAML parsing in shell</sub> | <sub>Human-readable layout files</sub> |
 
 ---
 
@@ -712,11 +712,11 @@ docker-compose exec tmux-lab bash
 
 ### 1. Progressive Learning Curriculum
 
-| Level | Duration | Exercises | Demos |
+| <sub>Level</sub> | <sub>Duration</sub> | <sub>Exercises</sub> | <sub>Demos</sub> |
 |-------|----------|-----------|-------|
-| Beginner | 2-4 hours | 10+ | 1 interactive demo |
-| Intermediate | 4-6 hours | 10+ | 1 advanced demo |
-| Advanced | 6-10 hours | 10+ | 1 automation demo |
+| <sub>Beginner</sub> | <sub>2-4 hours</sub> | <sub>10+</sub> | <sub>1 interactive demo</sub> |
+| <sub>Intermediate</sub> | <sub>4-6 hours</sub> | <sub>10+</sub> | <sub>1 advanced demo</sub> |
+| <sub>Advanced</sub> | <sub>6-10 hours</sub> | <sub>10+</sub> | <sub>1 automation demo</sub> |
 
 ### 2. Runnable Demonstrations
 
@@ -840,14 +840,14 @@ stateDiagram-v2
 
 ### System Requirements
 
-| Component | Minimum | Recommended |
+| <sub>Component</sub> | <sub>Minimum</sub> | <sub>Recommended</sub> |
 |-----------|---------|-------------|
-| **OS** | Linux, macOS, WSL2 | Ubuntu 22.04+ / macOS 13+ |
-| **Tmux** | 3.2 | 3.4+ |
-| **Bash** | 4.0 | 5.0+ |
-| **Python** | 3.8 | 3.10+ |
-| **Memory** | 512 MB | 1 GB+ |
-| **Disk Space** | 100 MB | 500 MB |
+| <sub>**OS**</sub> | <sub>Linux, macOS, WSL2</sub> | <sub>Ubuntu 22.04+ / macOS 13+</sub> |
+| <sub>**Tmux**</sub> | <sub>3.2</sub> | <sub>3.4+</sub> |
+| <sub>**Bash**</sub> | <sub>4.0</sub> | <sub>5.0+</sub> |
+| <sub>**Python**</sub> | <sub>3.8</sub> | <sub>3.10+</sub> |
+| <sub>**Memory**</sub> | <sub>512 MB</sub> | <sub>1 GB+</sub> |
+| <sub>**Disk Space**</sub> | <sub>100 MB</sub> | <sub>500 MB</sub> |
 
 ### Detailed Installation Steps
 
@@ -1072,4 +1072,3 @@ timeline
 ---
 
 **Built with ❤️ for the terminal enthusiast community**
-
